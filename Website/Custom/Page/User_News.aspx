@@ -1,0 +1,1 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template/PageUser.Master" AutoEventWireup="true" CodeBehind="User_News.aspx.cs" Inherits="FirstDemo.User_News" %>

@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PageAdmin.Master.cs" Inherits="FirstDemo.PageAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>My Website</title>
+    <link href="~/Html/css/StyleSheet3.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 98%;
+        }
+
+        .auto-style4 {
+            width: 560px;
+            height: 19px;
+        }
+
+        .auto-style5 {
+            width: 100px;
+        }
+
+        .auto-style6 {
+            width: 501px;
+        }
+
+        .auto-style7 {
+            height: 20px;
+            width: 200px;
+            margin: 0px 0px;
+            float: right;
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MXS278W');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXS278W"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <form id="form1" runat="server">
+
+        <div class="wrapper">
+
+            <div class="header">
+                <h1>HEADER</h1>
+                <table class="auto-style1">
+                    <tr>
+                        <td>
+                            <div class="auto-style7">
+                                <asp:Panel ID="Panel2" runat="server">
+                                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                                    <asp:Button ID="Button3" runat="server" Text="Logout" OnClick="Button3_Click" CausesValidation="False" />
+                                </asp:Panel>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="nav">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style6">
+                            <p class="auto-style4">NAVIGATION AREA</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style6">
+                            <ul>
+                                <li><a href="/Custom/Page/Admin_AddUser.aspx">User</a></li>
+                                <li><a href="/Custom/Page/Admin_Post.aspx">Post</a></li>
+                                <li><a href="/Custom/Page/Admin_News.aspx">News</a></li>
+                                <li><a href="/Custom/Page/Admin_Feedback.aspx">Feedback</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="main">
+                <p>MAIN CONTENT AREA</p>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div class="footer">
+                <p>FOOTER AREA</p>
+
+                <div class="footer_nav">
+
+                    <hr class="footer_hr1" />
+                    <hr class="footer_hr2" />
+                    <h1>All right has been reserved</h1>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿.Page {
+    width: 600px;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+    .Page h1 {
+        height: auto;
+        font-size: 24px;
+        font-family: Arial;
+        border-bottom: 2px solid #000000;
+        margin: 0px;
+    }
+
+.Welcome_div {
+    width: 100px;
+    height: 12px;
+    background: #000000;
+    float: right;
+}
+
+.Page p {
+    font-size: 12px;
+    font-family: Calibri;
+    text-align: justify;
+}

@@ -1,0 +1,295 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D10CEA7-0886-4ED6-87B3-88A6B36330C5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FirstDemo</RootNamespace>
+    <AssemblyName>FirstDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\.gitkeep" />
+    <Content Include="Custom\Page\Admin_Feedback.aspx" />
+    <Content Include="Custom\Widget\Form\FormFeedback.ascx" />
+    <Content Include="Custom\Widget\Homepage\MainBanner.ascx" />
+    <Content Include="Custom\Widget\Post\PostListing.ascx" />
+    <Content Include="Html\js\jquery\jquery-3.4.1.min.js" />
+    <Content Include="Custom\Widget\Navigation\FooterNavigation.ascx" />
+    <Content Include="Custom\Widget\Navigation\MainNavigation.ascx" />
+    <Content Include="Custom\Widget\News\NewsDetail.ascx" />
+    <Content Include="Custom\Widget\News\NewsListing.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="Html\css\StyleSheet1.css" />
+    <Content Include="Html\css\StyleSheet2.css" />
+    <Content Include="Html\css\StyleSheet3.css" />
+    <Content Include="Custom\Page\User_Feedback.aspx" />
+    <Content Include="Custom\Page\User_Home.aspx" />
+    <Content Include="Custom\Page\User_Login.aspx" />
+    <Content Include="Image\no-image.jpg" />
+    <Content Include="Logs\.gitkeep" />
+    <Content Include="Web.config" />
+    <Content Include="Custom\Page\User_Register.aspx" />
+    <Content Include="Custom\Page\Admin_AddUser.aspx" />
+    <Content Include="Custom\Page\User_Post.aspx" />
+    <Content Include="Custom\Page\User_About.aspx" />
+    <Content Include="Custom\Page\Admin_Post.aspx" />
+    <Content Include="Custom\Page\Admin_News.aspx" />
+    <Content Include="Custom\Page\User_News.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\Page\Admin_Feedback.aspx.cs">
+      <DependentUpon>Admin_Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\Admin_Feedback.aspx.designer.cs">
+      <DependentUpon>Admin_Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Utils\CommonUtils.cs" />
+    <Compile Include="Custom\Utils\Constants.cs" />
+    <Compile Include="Custom\Widget\Form\FormFeedback.ascx.cs">
+      <DependentUpon>FormFeedback.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Widget\Form\FormFeedback.ascx.designer.cs">
+      <DependentUpon>FormFeedback.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Widget\Homepage\MainBanner.ascx.cs">
+      <DependentUpon>MainBanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Widget\Homepage\MainBanner.ascx.designer.cs">
+      <DependentUpon>MainBanner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Widget\Navigation\FooterNavigation.ascx.cs">
+      <DependentUpon>FooterNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Widget\Navigation\FooterNavigation.ascx.designer.cs">
+      <DependentUpon>FooterNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Widget\Navigation\MainNavigation.ascx.cs">
+      <DependentUpon>MainNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Widget\Navigation\MainNavigation.ascx.designer.cs">
+      <DependentUpon>MainNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Widget\News\NewsDetail.ascx.cs">
+      <DependentUpon>NewsDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Widget\News\NewsDetail.ascx.designer.cs">
+      <DependentUpon>NewsDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Widget\News\NewsListing.ascx.cs">
+      <DependentUpon>NewsListing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Widget\News\NewsListing.ascx.designer.cs">
+      <DependentUpon>NewsListing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Widget\Post\PostListing.ascx.cs">
+      <DependentUpon>PostListing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Widget\Post\PostListing.ascx.designer.cs">
+      <DependentUpon>PostListing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Template\PageUser.Master.cs">
+      <DependentUpon>PageUser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\PageUser.Master.designer.cs">
+      <DependentUpon>PageUser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Template\PageAdmin.Master.cs">
+      <DependentUpon>PageAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\PageAdmin.Master.designer.cs">
+      <DependentUpon>PageAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Page\User_Feedback.aspx.cs">
+      <DependentUpon>User_Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\User_Feedback.aspx.designer.cs">
+      <DependentUpon>User_Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Page\User_Home.aspx.cs">
+      <DependentUpon>User_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\User_Home.aspx.designer.cs">
+      <DependentUpon>User_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Page\User_Login.aspx.cs">
+      <DependentUpon>User_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\User_Login.aspx.designer.cs">
+      <DependentUpon>User_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Page\User_Register.aspx.cs">
+      <DependentUpon>User_Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\User_Register.aspx.designer.cs">
+      <DependentUpon>User_Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Page\Admin_AddUser.aspx.cs">
+      <DependentUpon>Admin_AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\Admin_AddUser.aspx.designer.cs">
+      <DependentUpon>Admin_AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Page\User_Post.aspx.cs">
+      <DependentUpon>User_Post.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\User_Post.aspx.designer.cs">
+      <DependentUpon>User_Post.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Page\User_About.aspx.cs">
+      <DependentUpon>User_About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\User_About.aspx.designer.cs">
+      <DependentUpon>User_About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Page\Admin_Post.aspx.cs">
+      <DependentUpon>Admin_Post.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\Admin_Post.aspx.designer.cs">
+      <DependentUpon>Admin_Post.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Page\Admin_News.aspx.cs">
+      <DependentUpon>Admin_News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\Admin_News.aspx.designer.cs">
+      <DependentUpon>Admin_News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Page\User_News.aspx.cs">
+      <DependentUpon>User_News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\Page\User_News.aspx.designer.cs">
+      <DependentUpon>User_News.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\connectionstring.config" />
+    <Content Include="App_Config\mydemo.config" />
+    <Content Include="App_Config\log4net.config" />
+    <None Include="packages.config" />
+    <Content Include="Template\PageUser.Master" />
+    <Content Include="Template\PageAdmin.Master" />
+    <None Include="Properties\PublishProfiles\yosadev.pubxml" />
+    <Content Include="App_Config\smtp.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Html\html\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50864</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50864/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

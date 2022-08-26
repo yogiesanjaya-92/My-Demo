@@ -1,0 +1,199 @@
+﻿html {
+    background-color: #000000;
+}
+
+.wrapper {
+    width: 850px;
+}
+
+.header {
+    padding: 5px 10px;
+    background: #d11508;
+    color: white;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0px;
+    height: 96px;
+}
+
+.nav {
+    padding: 5px 10px;
+    background: #742500;
+}
+
+    .nav p {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        color: yellow;
+        margin: 0px;
+    }
+
+    .nav ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .nav ul li {
+            display: inline-block;
+            width: 100px;
+        }
+
+            .nav ul li a {
+                font-family: Calibri;
+                font-size: 14px;
+                text-decoration: none;
+                color: yellow;
+                display: block;
+            }
+
+                .nav ul li a:hover {
+                    color: #0094ff;
+                }
+
+.login {
+    height: 20px;
+    width: 250px;
+    margin: 0px 0px;
+    float: right;
+}
+
+.sidebar {
+    padding: 5px 10px;
+    float: left;
+    width: 210px;
+    height: 800px;
+    background: #f5a100;
+}
+
+    .sidebar p {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+.search {
+    margin: 0px 0px;
+    float: right;
+}
+
+.search_textbox {
+    height: 20px;
+    width: 180px;
+    vertical-align: middle;
+    margin-right: -5px;
+}
+
+.search_button {
+    height: 27px;
+    width: 60px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.main {
+    padding: 5px 10px;
+    float: right;
+    width: 600px;
+    height: 800px;
+    background: #fff549;
+}
+
+    .main p {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+.post-card {
+    float: none;
+}
+
+    .post-card h1 {
+        font-size: 36px;
+        font-family: Arial;
+        margin: 6px 0px;
+        height: 40px;
+    }
+
+    .post-card h3 {
+        font-size: 18px;
+        height: 20px;
+        font-weight: normal;
+    }
+
+.drop-list {
+    width: 125px;
+    margin: 0px 225px;
+}
+
+h2 {
+    margin: 0 0 1em;
+}
+
+.footer {
+    padding: 10px;
+    clear: both;
+    background: #ba4500;
+    height: 100px;
+}
+
+    .footer p {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0px;
+        text-align: center;
+    }
+
+.footer_nav {
+    text-align: center;
+}
+
+    .footer_nav ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .footer_nav ul li {
+            display: inline-block;
+            width: 50px;
+        }
+
+            .footer_nav ul li a {
+                font-family: Calibri;
+                font-size: 12px;
+                text-decoration: none;
+                color: white;
+            }
+
+                .footer_nav ul li a:hover {
+                    color: yellow;
+                }
+
+.footer_hr1 {
+    margin: 0px;
+    background: #000000;
+    height: 1px;
+    border: none;
+}
+
+.footer_hr2 {
+    margin: 0px;
+    background: #5f5f5f;
+    height: 1px;
+    border: none;
+}
+
+.footer_nav h1 {
+    font-family: Verdana;
+    font-size: 12px;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    height: 15px;
+}
